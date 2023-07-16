@@ -9,65 +9,121 @@
         <title> About Me </title>
         
         <style type = "text/css">
-            .wrapper {
-                width: 100%;
-                height: 100vh
+            body, html{
+                height: 100%;
+                margin: 0;
             }
-            .content {
-                max-width: 800px;
-            }
-
-            section {
-                width: 100%;
-                height: 100vh;
-                display: flex;
-                align-items: center;
-                justify-content: center
-            }
-
 
             .nav-background {
-                background-color: #e1c7d4;
-                background-size: cover;
+                    background-color: #ffffff;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
 
-            }
+            .bg {
+                background-image: url("pink-sky-background-with-crescent-moon.jpg");
 
-            .one {
-                background: url("pink-sky-background-with-crescent-moon.jpg");
+                /* Full height */
+                height: 100%; 
+
+                /* Center and scale the image nicely */
+                background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: center;
+            }
+
+            .footer-basic {
+                padding:40px 0;
+                background-color:#ffffff;
+                color:#4b4c4d;
+            }
+
+
+            .footer-basic .social {
+                text-align:center;
+                padding-bottom:25px;
+            }
+
+            .footer-basic .social > a {
+                font-size:24px;
+                width:40px;
+                height:40px;
+                line-height:40px;
+                display:inline-block;
+                text-align:center;
+                border-radius:50%;
+                border:1px solid #ccc;
+                margin:0 8px;
+                color:inherit;
+                opacity:0.75;
+            }
+
+            .footer-basic .social > a:hover {
+                opacity:0.9;
+            }
+
+            .footer-basic .copyright {
+                margin-top:15px;
+                text-align:center;
+                font-size:13px;
+                color:#aaa;
+                margin-bottom:0;
+            }
+            
+            .center {
+                text-align: center
+            }
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .moveoverright {
+                margin-left: 50px;
             }
 
         </style>
 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     </head>
 
-    <!-- All visible content on web page -->
     <body>
-        <nav class = "navbar navbar-expand-lg navbar-dark bg-dark nav-background">
+        <nav class = "nav container">
             <div style = "text-align: right" class = "menu"> 
                 <a href="./about.html">About</a>
+                <a href="./showroom.html"> Showroom</a>
             </div>       
+            <div style = "text-align: left " class = "menu moveoverright">
+                <a href ="./homepage.html"> 
+                    <img border = "0" alt = "Home" src = "chimney-home-icon-transparent-1.png" width = "50" height = "50" >
+                </a>
+            </div>
         </nav>
-        <style>
-            .center {
-             text-align: center
-            }
-            </style>
-        <section class = "one">
-            <div class = "content">
-                <p class = "center", style = "font-size:3vw"> Welcome </p>
-                <p class = "center", style = "font-size:3vw"> I'm Elaine Zhu. </p>
-            </div>
-        </section>
 
-        <section class = "two">
-            <div class="myDiv">
-                <h2 class = "center"> Yippee</h2>
-                <p class = "center"> Bombs </p>
-            </div>
-        </section>
+        
+        <div class="bg">
+            <p class="centered center" style = "font-size:3vw"> Welcome <br> I'm Elaine Zhu</p>
+
+        </div>
+
+
+
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="https://www.instagram.com/elainez.art/"><i class="icon ion-social-instagram"></i></a><a href="https://www.linkedin.com/in/elaine-zhu-564a6b282/"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/ratricez"><i class="icon ion-social-github"></i></a></div>
+                <ul class="list-inline">
+                </ul>
+                <p class="copyright">Elaine Zhu © 2023</p>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+     
 
     </body>
 
