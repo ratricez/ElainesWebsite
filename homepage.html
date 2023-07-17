@@ -9,92 +9,168 @@
         <title> Elaine's Website </title>
         
         <style type = "text/css">
-            .wrapper {
-                width: 100%;
-                height: 100vh
+            body, html{
+                height: 100%;
+                margin: 0;
             }
-            .content {
-                max-width: 800px;
-            }
-
-            section {
-                width: 100%;
-                height: 100vh;
-                display: flex;
-                align-items: center;
-                justify-content: center
-            }
-
-            /* .container{
-                overflow-y: scroll;
-                scroll-snap-type: y mandatory;
-            }
-
-            .slides{
-                scroll-snap-align: start;
-            } */
 
             .nav-background {
-                background-color: #e1c7d4;
-                background-size: cover;
-
-            }
+                    background-color: #ffffff;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
 
             .one {
-                background: url("pink-sky-background-with-crescent-moon.jpg");
+                background-image: url("pink-sky-background-with-crescent-moon.jpg");
+
+                /* Full height */
+                height: 100%; 
+
+                /* Center and scale the image nicely */
+                background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: center;
+            }
+
+            .footer-basic {
+                padding:40px 0;
+                background-color:#ffffff;
+                color:#4b4c4d;
+            }
+
+
+            .footer-basic .social {
+                text-align:center;
+                padding-bottom:25px;
+            }
+
+            .footer-basic .social > a {
+                font-size:24px;
+                width:40px;
+                height:40px;
+                line-height:40px;
+                display:inline-block;
+                text-align:center;
+                border-radius:50%;
+                border:1px solid #ccc;
+                margin:0 8px;
+                color:inherit;
+                opacity:0.75;
+            }
+
+            .footer-basic .social > a:hover {
+                opacity:0.9;
+            }
+
+            .footer-basic .copyright {
+                margin-top:15px;
+                text-align:center;
+                font-size:13px;
+                color:#aaa;
+                margin-bottom:0;
+            }
+            
+            .center {
+                text-align: center;
+                padding: 120px 0;
+            }
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .moveoverright {
+                margin-left: 50px;
+            }
+
+            .nav-background {
+                background-color: #ffffff;
+                background-size: cover;
+                background-repeat: no-repeat;
             }
 
             .two {
                 background-color: #d1b7f7;
+                
+                /* Full height */
+                height: 100%; 
+
+                /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
             }
 
             .three {
-                background-color: #99baf0
+                background-color: #99baf0;
+                
+                /* Full height */
+                height: 50%; 
+
+                /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            * {
+                margin:0;
+                padding:0;
             }
         </style>
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     </head>
 
     <!-- All visible content on web page -->
     <body>
-        
-        <nav class = "nav-background container">
+        <nav class = "nav container">
             <div style = "text-align: right" class = "menu"> 
                 <a href="./about.html">About</a>
-            </div>
-            <div style = "text-align: right" class = "menu">
                 <a href="./showroom.html"> Showroom</a>
             </div>       
-        </nav>
-        <style>
-            .center {
-             text-align: center
-            }
-            </style>
-        <section class = "slides one container">
-            <div class = "content">
-                <p class = "center", style = "font-size:3vw"> Welcome </p>
-                <p class = "center", style = "font-size:3vw"> I'm Elaine Zhu. </p>
+            <div style = "text-align: left " class = "menu">
+                <a href ="./homepage.html"> 
+                    <img border = "0" alt = "Home" src = "chimney-home-icon-transparent-1.png" width = "50" height = "50" >
+                </a>
             </div>
-        </section>
+        </nav>
 
-        <section class = "slides two container">
-            <div class="myDiv">
-                <h2 class = "center"> Yippee</h2>
+        <div class="one">
+            <p class="centered center" style = "font-size:3vw"> Welcome <br> I'm Elaine Zhu</p>
+        </div>
+
+        <section class = "two">
+            <div class="two ">
+                <h2 style = "position:relative; top:230px" class = "center"> Yippee </h2>
                 <p class = "center"> Bombs </p>
             </div>
         </section>
 
-        <section class = "slides three container">
-            <div class="myDiv">
-                <h2 class = "center"> Yay</h2>
-                <p class = "center"> I don't know what to put </p>
+        <section class = "three">
+            <div class="three">
+                <h2 class = "center"> Resume ↓ </h2>
+                <a style = "position:relative; top:50px" class = "center", href='https://www.canva.com/design/DAFn-EtKX1c/lG6FDnCqw_iGvvkgaTo2zA/edit'><button> View Resume </button></a>
             </div>
-        </section>
+        </section> 
 
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="https://www.instagram.com/elainez.art/"><i class="icon ion-social-instagram"></i></a><a href="https://www.linkedin.com/in/elaine-zhu-564a6b282/"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/ratricez"><i class="icon ion-social-github"></i></a></div>
+                <ul class="list-inline">
+                </ul>
+                <p class="copyright">Elaine Zhu © 2023</p>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+     
     </body>
 
 <!-- Ending tag -->
