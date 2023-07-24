@@ -93,25 +93,19 @@
             .hero {
                 background-image: url("pink-sky-background-with-crescent-moon.jpg");
                 height: 100%;
+                width: 100%;
+
 
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
 
-            .heading h1{
-                color: #9c5656;
-                font-size: 55px;
-                text-align: center;
-                margin-top: 35px;
-                animation: fadeInRight 2s ease;
-            }
-
             .container{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 90%;
+                width: 100%;
             }
 
             .hero-content{
@@ -120,11 +114,19 @@
                 margin: 0px 25px;
             }
 
+            .hero-content h1{
+                font-size: 55px;
+                margin-bottom: 20px;
+                text-align: center;
+                color: #a87698;
+                text-align: center;
+            }
+
             .hero-content h2{
                 font-size: 28px;
                 margin-bottom: 20px;
                 color: #333;
-                text-align:center;
+                text-align: center;
             }
 
             
@@ -194,12 +196,14 @@
                     text-align: center;
                 }
 
+                .hero-content h1{
+                    font-size: 55px;
+                    text-align: center;
+                }
                 .hero-content p{
                     font-size: 18px;
                     margin-bottom: 20px;
                 }
-
-
             }
 
 
@@ -258,25 +262,23 @@
             </div>
         </nav>
 
-        <section class = "hero">
-            <div style = "position:relative; top:30px" class = "heading">
-                <h1> Welcome! </h1>
-            </div>
+        <section class = "hero container">
             <div class = "container">
-                <div class = "hero-content">
-                    <h2>I’m Elaine Zhu</h2>
+                <div class = "hero-content ">
+                    <h1 class = "center"> Welcome! </h1>
+
+                    <h2 class = "center"> I’m Elaine Zhu </h2>
     
                 </div>
 
             </div>
         </section>
 
-        <section class = "two">
-            </div>
+        <section class = "two container">
             <div class = "container">
                 <div class = "two-content">
-                    <h2> Yippee </h2>
-                    <p> Bombs </p>
+                    <h2 class = "center"> Yippee </h2>
+                    <p class = "center"> Bombs </p>
                 </div>
 
             </div>
