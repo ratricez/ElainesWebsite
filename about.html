@@ -100,6 +100,8 @@
                 font-size: 55px;
                 text-align: center;
                 margin-top: 35px;
+                animation: fadeInRight 2s ease;
+
             }
 
             .container{
@@ -118,7 +120,7 @@
             }
 
             .hero-content h2{
-                font-size: 38px;
+                font-size: 28px;
                 margin-bottom: 20px;
                 color: #333
             }
@@ -131,6 +133,22 @@
                 color: #666
             }
 
+            .hero-content button{
+                display: inline-block;
+                background-color: #df6464;
+                color: #fff;
+                padding: 12px 24px;
+                border-radius: 5px;
+                font-size: 20px;
+                border: none;
+                cursor: pointer;
+                transition: 0.3s ease;
+            }
+
+            .hero-content button:hover{
+                background-color: #e68383;
+                transform: scale(1.1);
+            }
 
             .hero-image{
                 flex: 1;
@@ -176,6 +194,11 @@
 
                 .hero-image{
                     width: 100%;
+                }
+
+                .hero-content button{
+                    font-size: 16px;
+                    padding: 8px 17px;
                 }
 
 
@@ -230,13 +253,17 @@
             </div>
             <div class = "container">
                 <div class = "hero-content">
-                    <p> Hi! I’m Elaine Zhu, a junior at Laurel Heights Secondary School!
-    
-                        <br> <br> I’m a creator at heart. I love creating projects that bring a smile to others’ faces and solutions to problems. I still have much to learn and luckily, I love learning. In my spare time, I’m likely trying new things or furthering my current knowledge in topics I love as I believe expanding your experiences and knowledge 
-                        
-                        <br> In the future, I plan to pursue a career in STEAM, more specifically, Software Engineering or Computer Science at UoW. 
+                    <h2> Hi! I’m Elaine Zhu, a junior at Laurel Heights Secondary School </h2>
+
+                    <p style="color:#333; font-size: 18px;">  interested in pursuing a career in STEAM—preferably Software Engineering or Computer Science at UoW. </p>
+
+                    <p> I’m a creator at heart and strive to create projects that bring a smile to others’ faces and help create solutions to problems. I still have much to learn, and luckily, I love learning. In my spare time, 
+                        I’m likely trying new things or furthering my current knowledge on topics I love, as I believe in expanding your experiences and knowledge.
                     </p>
+                    <a href='https://www.canva.com/design/DAFn-EtKX1c/lG6FDnCqw_iGvvkgaTo2zA/edit'><button> View Resume </button></a>
+
                 </div>
+
                 <div class = "hero-image">
                     <img src="Banana_Cat.png">
                 </div>
