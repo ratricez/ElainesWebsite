@@ -92,7 +92,7 @@
 
             .hero {
                 background-color: #e7a9a9;
-                height: 110%
+                height: 130%
             }
 
             .heading h1{
@@ -130,7 +130,7 @@
                 font-size: 24px;
                 line-height: 1.5;
                 margin-bottom: 40px;
-                color: #666
+                color: #666;
             }
 
             .hero-content button{
@@ -162,6 +162,29 @@
                 width: 100%;
                 height: auto;
                 border-radius: 10px;
+            }
+
+            .column {
+                float: left;
+                width: 25%;
+                padding: 60px;
+            }
+
+            .column img{
+                border-radius: 10px;
+            }
+            .column img:hover{
+                transform: scale(1.03);
+                border-radius: 10px;
+                box-shadow: 0 0 70px #df6464;
+
+            }
+
+            /* Clearfix (clear floats) */
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
             }
             
             @media screen and (max-width: 800px){
@@ -200,8 +223,18 @@
                     font-size: 16px;
                     padding: 8px 17px;
                 }
+            }    
 
+            @media screen and (max-width: 1050px){
+                .column {
+                    width: 100%;
+                }
 
+                .column img:hover{
+                    width: 100%;
+                    transform: scale(1.05);
+                    border-radius: 10px;
+                }
             }
 
             @keyframes fadeInUp {
@@ -270,6 +303,27 @@
             </div>
         </section>
 
+        <div style = "position:relative; top:30px" class = "heading">
+            <h1> What else I’m doing in my spare time </h1>
+        </div>
+        <div class="row">
+            <div class="column center">
+                <img src="Banana_Cat.png" alt="" style="width:100%">
+                <p style="color:#333; font-size: 20px;">  attempting a new craft </p>
+            </div>
+            <div class="column center">
+                <img src="Banana_Cat.png" alt="" style="width:100%">
+                <p style="color:#333; font-size: 20px;"> obsessing over online cats </p>
+            </div>
+            <div class="column center">
+                <img src="Banana_Cat.png" alt="" style="width:100%">
+                <p style="color:#333; font-size: 20px;"> working on this website or Leetcode (Breaking the website or misreading questions)</p>
+            </div>
+            <div class="column center">
+                <img src="Banana_Cat.png" alt="" style="width:100%">
+                <p style="color:#333; font-size: 20px;"> jamming out to Taylor Swift </p>
+            </div>
+        </div>
 
         <div class="footer-basic">
             <footer>
