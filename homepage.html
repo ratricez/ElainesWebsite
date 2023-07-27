@@ -14,11 +14,83 @@
                 margin: 0;
             }
 
-            .nav-background {
-                    background-color: #1d1c1c;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
+
+            .body {
+                margin: 0;
+                background: #222;
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 800;
+            }
+
+            .containerr {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .header {
+                background: #dcc4d4;
+
+            }
+
+            .logo {
+                float: left;
+                padding: 10px 0;
+            }
+
+            .header::after {
+                content: "";
+                display: table;
+                clear: both
+            }
+
+            nav {
+                float: right;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            nav li{
+                display: inline-block;
+                margin-left: 70px;
+                padding-top: 25px;
+
+                position: relative;
+            }
+
+            nav a {
+                color: #444;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+
+            nav a:hover {
+                color: #000;
+            }
+
+            nav a::before {
+                content: "";
+                display: block;
+                height: 3px;
+                width: 100%;
+                background-color: #444;
+
+                position: absolute;
+                top: 0p;
+                width: 0%;
+
+                transition: all ease-in-out 250ms;
+            }
+
+            nav a:hover::before{
+                width: 100%;
+
+            }
+
 
             .bg {
                 background-color: #ffffff;
@@ -118,7 +190,7 @@
                 font-size: 55px;
                 margin-bottom: 20px;
                 text-align: center;
-                color: #a87698;
+                color: #814e71;
                 text-align: center;
             }
 
@@ -250,35 +322,47 @@
     </head>
 
     <body>
-        <nav class = "nav">
+
+        <section class = "header">
+            <div class = "containerr"> 
+                <a href ="./homepage.html"> 
+                    <img src = "chimney-home-icon-transparent-1.png" width = "50" height = "70" class = "logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li> <a href = "./showroom.html"> Showroom</a></li>
+                        <li> <a href = "./about.html"> About </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- <nav class = "nav">
             <div style = "text-align: right" class = "menu"> 
-                <a style="text-decoration:none" href="./about.html">About</a>
                 <a style="text-decoration:none" href="./showroom.html"> Showroom</a>
+                <a style="text-decoration:none" href="./about.html">About</a>
             </div>       
             <div style = "text-align: left " class = "menu moveoverright">
                 <a href ="./homepage.html"> 
                     <img border = "0" alt = "Home" src = "chimney-home-icon-transparent-1.png" width = "50" height = "50" >
                 </a>
             </div>
-        </nav>
+        </nav> -->
 
         <section class = "hero container">
             <div class = "container">
                 <div class = "hero-content ">
                     <h1 class = "center"> Welcome! </h1>
-
                     <h2 class = "center"> I’m Elaine Zhu </h2>
-    
                 </div>
-
             </div>
         </section>
 
         <section class = "two container">
             <div class = "container">
                 <div class = "two-content">
-                    <h2 class = "center"> Yippee </h2>
-                    <p class = "center"> Bombs </p>
+                    <h2 class = "center"> &#128572 </h2>
+                    <p class = "center"> As you've likely realized, this is my website! It's still a work in progress so :D </p>
                 </div>
 
             </div>
