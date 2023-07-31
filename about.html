@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 
+
 <!-- Opening tag to wrap all the code -->
 <html lang="en">
+
 
     <!-- All nonvisile information about web page (metadata) -->
     <head>
 
+
         <title> About Me </title>
-        
+       
         <style type = "text/css">
             body, html{
                 height: 100%;
                 margin: 0;
             }
+
 
             .body {
                 margin: 0;
@@ -21,20 +25,25 @@
                 font-weight: 800;
             }
 
+
             .containerr {
                 width: 80%;
                 margin: 0 auto;
             }
 
+
             .header {
                 background: #e7a9a9;
 
+
             }
+
 
             .logo {
                 float: left;
                 padding: 10px 0;
             }
+
 
             .header::after {
                 content: "";
@@ -42,9 +51,11 @@
                 clear: both
             }
 
+
             nav {
                 float: right;
             }
+
 
             nav ul {
                 margin: 0;
@@ -52,13 +63,16 @@
                 list-style: none;
             }
 
+
             nav li{
                 display: inline-block;
                 margin-left: 70px;
                 padding-top: 25px;
 
+
                 position: relative;
             }
+
 
             nav a {
                 color: #444;
@@ -67,9 +81,11 @@
                 font-size: 20px;
             }
 
+
             nav a:hover {
                 color: #000;
             }
+
 
             nav a::before {
                 content: "";
@@ -78,28 +94,34 @@
                 width: 100%;
                 background-color: #444;
 
+
                 position: absolute;
                 top: 0p;
                 width: 0%;
 
+
                 transition: all ease-in-out 250ms;
             }
+
 
             nav a:hover::before{
                 width: 100%;
             }
-            
+           
             .bg {
                 background-color: #ffffff;
 
+
                 /* Full height */
-                height: 100%; 
+                height: 100%;
+
 
                 /* Center and scale the image nicely */
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
+
 
             .footer-basic {
                 padding:40px 0;
@@ -108,10 +130,13 @@
             }
 
 
+
+
             .footer-basic .social {
                 text-align:center;
                 padding-bottom:25px;
             }
+
 
             .footer-basic .social > a {
                 font-size:24px;
@@ -127,9 +152,11 @@
                 opacity:0.75;
             }
 
+
             .footer-basic .social > a:hover {
                 opacity:0.9;
             }
+
 
             .footer-basic .copyright {
                 margin-top:15px;
@@ -138,7 +165,7 @@
                 color:#aaa;
                 margin-bottom:0;
             }
-            
+           
             .center {
                 text-align: center
             }
@@ -149,9 +176,11 @@
                 transform: translate(-50%, -50%);
             }
 
+
             .moveoverright {
                 margin-left: 50px;
             }
+
 
             * {
                 margin: 0px;
@@ -159,15 +188,18 @@
                 box-sizing: border-box;
             }
 
+
             .hero {
                 background-color: #e7a9a9;
                 height: 130%;
-                
+               
+
 
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
+
 
             .heading h1{
                 color: #9c5656;
@@ -175,7 +207,9 @@
                 text-align: center;
                 animation: fadeInRight 2s ease;
 
+
             }
+
 
             .container{
                 display: flex;
@@ -185,12 +219,14 @@
                 margin: 65px auto;
             }
 
+
             .hero-content{
                 flex: 1;
                 width: 600px;
-                margin: 0px 25px;
+                margin: 0px 50px;
                 animation: fadeInUp 2s ease;
             }
+
 
             .hero-content h2{
                 font-size: 28px;
@@ -198,13 +234,15 @@
                 color: #333
             }
 
-            
+
+           
             .hero-content p{
                 font-size: 24px;
                 line-height: 1.5;
                 margin-bottom: 40px;
-                color: #666;
+                color: #413d3d;
             }
+
 
             .hero-content button{
                 display: inline-block;
@@ -218,10 +256,12 @@
                 transition: 0.3s ease;
             }
 
+
             .hero-content button:hover{
                 background-color: #e68383;
                 transform: scale(1.1);
             }
+
 
             .hero-image{
                 flex: 1;
@@ -229,7 +269,9 @@
                 margin: auto;
                 animation: fadeInRight 2s ease;
 
+
             }
+
 
             .hero-image img{
                 width: 100%;
@@ -237,11 +279,13 @@
                 border-radius: 10px;
             }
 
+
             .column {
                 float: left;
                 width: 25%;
                 padding: 60px;
             }
+
 
             .column img{
                 border-radius: 10px;
@@ -251,7 +295,9 @@
                 border-radius: 10px;
                 box-shadow: 0 0 70px #df6464;
 
+
             }
+
 
             /* Clearfix (clear floats) */
             .row::after {
@@ -259,7 +305,37 @@
                 clear: both;
                 display: table;
             }
-            
+
+            .popup {
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.4);
+                display: none;
+            }
+            .popup-content {
+                background-color: white;
+                margin: 10% auto;
+                padding: 20px;
+                border: 1px solid #888888;
+                width: 50%;
+                font-weight: bolder;
+            }
+            .popup-content button {
+                display: block;
+                margin: 0 auto;
+            }
+            .show {
+                display: block;
+            }
+            h1 {
+                color: green;
+            }
+           
             @media screen and (max-width: 800px){
                 .heading h1{
                     font-size: 45px;
@@ -273,24 +349,28 @@
                     flex-direction: column;
                     margin: 0px;
                     padding: 0px 40px;
-                }   
+                }  
                 .hero-content{
                     width: 100%;
                     margin: 35px 0px;
                 }
 
+
                 .hero-content h2{
                     font-size: 30px;
                 }
+
 
                 .hero-content p{
                     font-size: 18px;
                     margin-bottom: 20px;
                 }
 
+
                 .hero-image{
                     width: 100%;
                 }
+
 
                 .hero-content button{
                     font-size: 16px;
@@ -298,10 +378,12 @@
                 }
             }    
 
+
             @media screen and (max-width: 1050px){
                 .column {
                     width: 100%;
                 }
+
 
                 .column img:hover{
                     width: 100%;
@@ -309,6 +391,7 @@
                     border-radius: 10px;
                 }
             }
+
 
             @keyframes fadeInUp {
                 0%{
@@ -320,6 +403,7 @@
                     transform: translateY(0px);
                 }
             }
+
 
             @keyframes fadeInRight {
                 0%{
@@ -334,26 +418,31 @@
         </style>
 
 
+
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Untitled</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     </head>
 
+
     <body>
         <section class = "header">
-            <div class = "containerr"> 
-                <a href ="./homepage.html"> 
+            <div class = "containerr">
+                <a href ="./index.html">
                     <img src = "chimney-home-icon-transparent-1.png" width = "50" height = "70" class = "logo">
                 </a>
                 <nav>
                     <ul>
                         <li> <a href = "./showroom.html"> Showroom</a></li>
                         <li> <a href = "./about.html"> About </a></li>
+                        <li> <a href = "./projects.html"> Projects </a></li>
                     </ul>
                 </nav>
             </div>
         </section>
+
 
         <section class = "hero">
             <div style = "position:relative; top:30px" class = "heading">
@@ -363,20 +452,51 @@
                 <div class = "hero-content">
                     <h2> Hi! I’m Elaine Zhu, a junior at Laurel Heights Secondary School </h2>
 
+
                     <p style="color:#333; font-size: 18px;">  interested in pursuing a career in STEAM—preferably Software Engineering or Computer Science at UoW. </p>
 
-                    <p> I’m a creator at heart and strive to create projects that bring a smile to others’ faces and help create solutions to problems. I still have much to learn, and luckily, I love learning. In my spare time, 
+
+                    <p> I’m a creator at heart and strive to create projects that bring a smile to others’ faces and help create solutions to problems. I still have much to learn, and luckily, I love learning. In my spare time,
                         I’m likely trying new things or furthering my current knowledge on topics I love, as I believe in expanding your experiences and knowledge.
                     </p>
-                    <a href='https://www.canva.com/design/DAFn-EtKX1c/lG6FDnCqw_iGvvkgaTo2zA/edit'><button> View Resume </button></a>
+                   
+                    <button id="myButton">
+                        View Resume
+                    </button>
+                  <div id="myPopup" class="popup">
+                      <div class="popup-content">
+
+                          <img src="Resume.png" alt="" style="width:100%">
+
+                          <button id="closePopup">
+                                Close
+                            </button>
+                      </div>
+                  </div>
+               
+                  <script>
+                      myButton.addEventListener("click", function () {
+                          myPopup.classList.add("show");
+                      });
+                      closePopup.addEventListener("click", function () {
+                          myPopup.classList.remove("show");
+                      });
+                      window.addEventListener("click", function (event) {
+                          if (event.target == myPopup) {
+                              myPopup.classList.remove("show");
+                          }
+                      });
+                  </script>
 
                 </div>
 
+
                 <div class = "hero-image">
-                    <img src="Banana_Cat.png">
+                    <img src="Banana_Cat.png" style = "width: 90%">
                 </div>
             </div>
         </section>
+
 
         <div style = "position:relative; top:30px" class = "heading">
             <h1> What else I’m doing in my spare time </h1>
@@ -400,9 +520,10 @@
             </div>
         </div>
 
+
         <div class="footer-basic">
             <footer>
-                <div class="social"><a href="https://www.instagram.com/elainez.art/"><i class="icon ion-social-instagram"></i></a><a href="https://www.linkedin.com/in/elaine-zhu-564a6b282/"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/ratricez"><i class="icon ion-social-github"></i></a></div>
+                <div class="social"><a href="https://www.instagram.com/elainez.art/"><i class="icon ion-social-instagram"></i></a><a href="https://www.linkedin.com/in/elaine-zhuu"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/ratricez"><i class="icon ion-social-github"></i></a></div>
                 <ul class="list-inline">
                 </ul>
                 <p class="copyright">Elaine Zhu © 2023</p>
@@ -412,7 +533,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
      
 
+
     </body>
+
 
 <!-- Ending tag -->
 </html>
+
+
+
+
+
