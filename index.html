@@ -192,6 +192,8 @@
                 text-align: center;
                 color: #814e71;
                 text-align: center;
+                animation: fadeInRight 2s ease;
+
             }
 
             .hero-content h2{
@@ -199,6 +201,7 @@
                 margin-bottom: 20px;
                 color: #333;
                 text-align: center;
+                animation: fadeInRight 2s ease;
             }
 
             
@@ -242,6 +245,7 @@
                 margin: 0px 25px;
                 animation: fadeInUp 2s ease;
             }
+
 
             @media screen and (max-width: 800px){
                 .heading h1{
@@ -312,6 +316,17 @@
                 }
             }
 
+            @keyframes fadeInRight {
+                0%{
+                    opacity: 0;
+                    transform: translateX(-50px);
+                }
+                100%{
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
+
         </style>
 
 
@@ -354,8 +369,8 @@
         <section class = "hero container">
             <div class = "container">
                 <div class = "hero-content ">
-                    <h1 class = "center"> Welcome! </h1>
-                    <h2 class = "center"> I’m Elaine Zhu </h2>
+                    <h1 class = "center "> Welcome! </h1>
+                    <h2 class = "center "> I’m Elaine Zhu </h2>
                 </div>
             </div>
         </section>
