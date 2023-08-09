@@ -172,7 +172,6 @@
             }
 
             .column-left h1 {
-
                 font-size: 55px;
                 margin-bottom: 20px;
                 color: #814e71;
@@ -213,6 +212,18 @@
                 margin-bottom: 40px;
                 color: #474747
             }
+
+            .two-content h1 {
+                margin-top: 50px;
+
+                font-size: 55px;
+                margin-bottom: 70px;
+                color: #814e71;
+                text-align: left;
+
+                /* margin-bottom: 1rem;
+                font-size: 3rem; */
+            }
             
             .two-content h2{
                 font-size: 20px;
@@ -227,23 +238,52 @@
                 animation: fadeInUp 2s ease;
             }
 
+            .three {
+                background-color: #333;
+               
+                /* Full height */
+                height: 100%;
+                width: 100%;
+
+
+                /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .three-content{
+                flex: 1;
+                width: 900px;
+                margin: 0px 25px;
+                animation: fadeInUp 2s ease;
+            }
+
+            .three-content h1 {
+                margin-top: 50px;
+
+                font-size: 40px;
+                margin-bottom: 50px;
+                color: #ffffff;
+                text-align: left;
+
+                /* margin-bottom: 1rem;
+                font-size: 3rem; */
+            }
+
+            .three-content p{
+
+                font-size: 24px;
+                line-height: 1.5;
+                color: #ffffff
+            }
+
             .column {
                 float: left;
                 width: 33%;
                 padding: 10px;
             }
 
-            .two-content h1 {
-                margin-top: 50px;
-
-                font-size: 55px;
-                margin-bottom: 70px;
-                color: #814e71;
-                text-align: left;
-
-                /* margin-bottom: 1rem;
-                font-size: 3rem; */
-            }
 
             /* Clear floats after the columns */
             .row:after {
@@ -270,19 +310,6 @@
                 transform: scale(1.1);
             }
 
-            .three {
-                background-color: #333;
-               
-                /* Full height */
-                height: 100%;
-                width: 100%;
-
-
-                /* Center and scale the image nicely */
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
 
             @media screen and (max-width: 800px){
 
@@ -427,7 +454,23 @@
         </section>
 
         <section class="three">
+            <div class = "hero-container">
+                <div class = "three-content">
+                    <h1> Project Information</h1>
+                    <p> With dozens of fun commands, Study Buddy motivates the user and helps them manage their time more efficiently. 
+                        Our bot has two main time management commands: reminder (!reminder {time}), and timer (!timer {time}). When 
+                        the user types these commands, Study Buddy will immediately start a timer and notify the user when it is over. 
+                        To create an incentive to study, we also put random, funny cat memes at the end of each timer. 
+                        <br> <br> Study Buddy also has other fun commands to incentivize even more productivity. 
+                        For example, there are hilarious motivations, roasting, quotes and even a wide variety of cat memes! <br> <br>
+                        There’s still more! We noticed that students often have problems finding resources/good resources 
+                        for school subjects, so we included some links for the users. Using the command !study help, 
+                        users can find resources for various topics such as CS, math, art, and more.
 
+                    </p>
+
+                </div>
+            </div>
         </section>
 
         
