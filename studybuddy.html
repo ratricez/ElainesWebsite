@@ -193,6 +193,66 @@
                 height: 100%;
             }
 
+            
+            .two {
+                background-color: #ffffff;
+               
+                /* Full height */
+                height: 100%;
+                width: 100%;
+
+
+                /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .two-content p{
+                font-size: 17px;
+                line-height: 1.5;
+                margin-bottom: 40px;
+                color: #474747
+            }
+            
+            .two-content h2{
+                font-size: 20px;
+                margin-bottom: 20px;
+                color: #000000
+            }
+
+            .two-content{
+                flex: 1;
+                width: 760px;
+                margin: 0px 25px;
+                animation: fadeInUp 2s ease;
+            }
+
+            .column {
+                float: left;
+                width: 33%;
+                padding: 10px;
+                height: 300px; /* Should be removed. Only for demonstration */
+            }
+
+            .two-content h1 {
+                margin-top: 50px;
+
+                font-size: 55px;
+                margin-bottom: 70px;
+                color: #814e71;
+                text-align: left;
+
+                /* margin-bottom: 1rem;
+                font-size: 3rem; */
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
 
             @media screen and (max-width: 800px){
 
@@ -231,6 +291,31 @@
                 .hero-content p{
                     font-size: 18px;
                     margin-bottom: 20px;
+                }
+
+                .two{
+                    margin: 0px;
+                }
+
+                .two-content{
+                    width: 100%;
+                    margin: 35px 0px;
+                }
+
+                .two-content h2{
+                    font-size: 30px;
+                    text-align: center;
+                }
+
+                .two-content p{
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    text-align: center;
+
+                }
+
+                .column {
+                    width: 50%;
                 }
             }
 
@@ -279,12 +364,35 @@
                     <h1> Study Buddy</h1>
 
                 </div>
+                
                 <!-- <div class = "column-left">
                     <img class = "hero-image" src = "Banana_Cat.png" >
                 </div> -->
             </div>
         </section>
 
+        <section class = "two ">
+            <div class = "hero-container">
+                <div class = "two-content">
+                    <h1> Study Buddy is a cat-themed Discord companion bot, with the goal of increasing overall productivity for the users</h1>
+
+                    <div class="row">
+                        <div class="column" style="background-color:#ffffff;">
+                            <h2>HACKATHON</h2>
+                            <p> ClockHacks </p>
+                        </div>
+                        <div class="column" style="background-color:#ffffff;">
+                            <h2> TIMELINE </h2>
+                            <p>November 2022</p>
+                        </div>
+                        <div class="column" style="background-color:#ffffff;">
+                            <h2>TEAM</h2>
+                            <p> @Hanna Xia <br> @Jasmine Xu <br> @Amy Zhou</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="footer-basic">
             <footer>
