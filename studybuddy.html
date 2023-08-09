@@ -231,7 +231,6 @@
                 float: left;
                 width: 33%;
                 padding: 10px;
-                height: 300px; /* Should be removed. Only for demonstration */
             }
 
             .two-content h1 {
@@ -253,6 +252,37 @@
                 clear: both;
             }
 
+            .button{
+                display: inline-block;
+                background-color: #df6464;
+                color: #fff;
+                padding: 12px 24px;
+                border-radius: 5px;
+                font-size: 20px;
+                border: none;
+                cursor: pointer;
+                transition: 0.3s ease;
+            }
+
+
+            .button:hover{
+                background-color: #e68383;
+                transform: scale(1.1);
+            }
+
+            .three {
+                background-color: #333;
+               
+                /* Full height */
+                height: 100%;
+                width: 100%;
+
+
+                /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
 
             @media screen and (max-width: 800px){
 
@@ -389,11 +419,18 @@
                             <h2>TEAM</h2>
                             <p> @Hanna Xia <br> @Jasmine Xu <br> @Amy Zhou</p>
                         </div>
+                        <a style="text-decoration:none" href='https://devpost.com/software/study-buddy-cro8xw' class = "button"> Learn More </a>
+
                     </div>
                 </div>
             </div>
         </section>
 
+        <section class="three">
+
+        </section>
+
+        
         <div class="footer-basic">
             <footer>
                 <div class="social"><a href="https://www.instagram.com/elainez.art/"><i class="icon ion-social-instagram"></i></a><a href="https://www.linkedin.com/in/elaine-zhuu"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/ratricez"><i class="icon ion-social-github"></i></a></div>
