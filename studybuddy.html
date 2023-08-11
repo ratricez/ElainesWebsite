@@ -307,6 +307,7 @@
             }
 
             .button{
+
                 display: inline-block;
                 background-color: #df6464;
                 color: #fff;
@@ -405,7 +406,13 @@
                 to {opacity: 1}
             }
 
+            @media screen and (max-width: 1050px){
 
+                .slideshow-container{
+                    padding: 10px 10px;
+                    width: 80%;
+                }
+            }
 
             @media screen and (max-width: 800px){
 
@@ -448,7 +455,7 @@
 
                 .two{
                     margin: 0px;
-                    height: 130%;
+                    height: 100%;
                     padding: 10px 10px;
 
                 }
@@ -458,8 +465,13 @@
                     margin: 35px 0px;
                 }
 
+                .two-content h1{
+                    font-size: 40px;
+                    text-align: center;
+                }
+
                 .two-content h2{
-                    font-size: 30px;
+                    font-size: 25px;
                     text-align: center;
                 }
 
@@ -492,11 +504,6 @@
 
                 }
 
-                .slideshow-container{
-                    padding: 10px 10px;
-                    width: 100%;
-                }
-
                 .column {
                     width: 50%;
                 }
@@ -509,12 +516,11 @@
                 .prev, .next,.text {
                     font-size: 11px
                 }
+
                 .hero-content{
                     width: 100%;
                     margin: 35px 0px;
                 }
-
-
 
             }
 
@@ -616,36 +622,40 @@
         </section>
 
         <section class = "four ">
+            <div class="slideshow-container">
 
-                <div class="slideshow-container">
-
-                    <div class="mySlides fade">
+                <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <img src="!help.png" style="width:100%">
-                    <p>The !help command: Displays all the bot commands and what they do</div> <p>
-                    
-                    <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="!productivitycommands.jpg" style="width:100%">
-                    <p>Productivity commands (!reminder, !timer), prints out a random funny cat meme when the timer is finished</div> <p>
-                    
-                    <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="!studyhelp.png" style="width:100%">
-                    <p>!studyhelp to find resources (math, CS, art, science)</div> <p>
-                    
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>
+                        <img src="!help.png" style="width:100%">
+                        <p>The !help command: Displays all the bot commands and what they do</div> <p>
+                        
+                        <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="!productivitycommands.jpg" style="width:100%">
+                        <p>Productivity commands (!reminder, !timer), prints out a random funny cat meme when the timer is finished</div> <p>
+                        
+                        <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="!studyhelp.png" style="width:100%">
+                        <p>!studyhelp to find resources (math, CS, art, science)</div> <p>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
                     
                     </div>
                     <br>
                     
                     <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
                     </div>
-                    
+                    <div style="position:relative; top:30px; text-align:center" >
+
+                        <a style="text-decoration:none" href='projects.html' class = "button"> Back to Projects </a>
+                    </div>
+
+                
                     <script>
                         let slideIndex = 1;
                         showSlides(slideIndex);
