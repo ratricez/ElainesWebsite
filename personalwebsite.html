@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<!-- Opening tag to wrap all the code -->
+<html lang="en">
+
+    <!-- All nonvisile information about web page (metadata) -->
+    <head>
+
+        <title> Elaine's Website </title>
+        
+        <style type = "text/css">
+            body, html{
+                height: 100%;
+                margin: 0;
+            }
+
+
+            .body {
+                margin: 0;
+                background: #222;
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 800;
+            }
+
+            .containerr {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .header {
+                background: #a9b8da;
+
+            }
+
+            .logo {
+                float: left;
+                padding: 10px 0;
+            }
+
+            .header::after {
+                content: "";
+                display: table;
+                clear: both
+            }
+
+            nav {
+                float: right;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            nav li{
+                display: inline-block;
+                margin-left: 70px;
+                padding-top: 25px;
+
+                position: relative;
+            }
+
+            nav a {
+                color: #444;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+
+            nav a:hover {
+                color: #000;
+            }
+
+            nav a::before {
+                content: "";
+                display: block;
+                height: 3px;
+                width: 100%;
+                background-color: #444;
+
+                position: absolute;
+                top: 0p;
+                width: 0%;
+
+                transition: all ease-in-out 250ms;
+            }
+
+            nav a:hover::before{
+                width: 100%;
+
+            }
+
+
+            .footer-basic {
+                padding:40px 0;
+                background-color:#ffffff;
+                color:#4b4c4d;
+            }
+
+
+            .footer-basic .social {
+                text-align:center;
+                padding-bottom:25px;
+            }
+
+            .footer-basic .social > a {
+                font-size:24px;
+                width:40px;
+                height:40px;
+                line-height:40px;
+                display:inline-block;
+                text-align:center;
+                border-radius:50%;
+                border:1px solid #ccc;
+                margin:0 8px;
+                color:inherit;
+                opacity:0.75;
+            }
+
+            .footer-basic .social > a:hover {
+                opacity:0.9;
+            }
+
+            .footer-basic .copyright {
+                margin-top:15px;
+                text-align:center;
+                font-size:13px;
+                color:#aaa;
+                margin-bottom:0;
+            }
+            
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+
+            }
+
+
+            .hero {
+                background: #a9b8da;
+            }
+
+            .hero-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                height: 85vh;
+                padding: 300px;
+            }
+
+            .column-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                color: #000;
+                padding: 0rem 2rem;
+            }
+
+            .column-left h1 {
+                font-size: 55px;
+                margin-bottom: 20px;
+                color: #526ab1;
+                text-align: right;
+
+                /* margin-bottom: 1rem;
+                font-size: 3rem; */
+            }
+
+            .column-right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .hero-image{
+                flex: 1;
+                width: 600px;
+                margin: auto;
+                animation: fadeInRight 2s ease;
+            }
+
+            
+            .hero-image img{
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            
+            .two {
+                background-color: #ffffff;
+               
+                /* Full height */
+                height: 100%;
+                width: 100%;
+
+
+                /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .two-content p{
+                font-size: 17px;
+                line-height: 1.5;
+                margin-bottom: 40px;
+                color: #474747
+            }
+
+            .two-content h1 {
+
+                font-size: 70px;
+                color: #526ab1;
+                text-align: left;
+
+                /* margin-bottom: 1rem;
+                font-size: 3rem; */
+            }
+            
+            .two-content h2{
+                font-size: 20px;
+                color: #000000
+            }
+
+            .two-content{
+                flex: 1;
+                width: 600px;
+
+                animation: fadeInUp 2s ease;
+            }
+
+            .column {
+                float: left;
+                width: 33%;
+                padding: 10px;
+            }
+
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+
+            .btn-group button {
+                display: inline-block;
+                background-color: #526ab1;
+                color: #fff;
+                padding: 12px 24px;
+                border-radius: 5px;
+                font-size: 50px;
+                margin-top: 50px;
+                border: none;
+                cursor: pointer;
+                transition: 0.3s ease;
+                display: block; /* Make the buttons appear below each other */
+            }
+
+            .btn-group button:not(:last-child) {
+            border-bottom: none; /* Prevent double borders */
+            }
+
+            /* Add a background color on hover */
+            .btn-group button:hover {
+                background-color: #7085c4;
+            }
+
+
+
+            .button:hover{
+                background-color: #6f87ce;
+                transform: scale(1.1);
+            }
+
+
+            @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+
+            @media screen and (max-width: 1050px){
+
+                .slideshow-container{
+                    padding: 10px 10px;
+                    width: 80%;
+                }
+            }
+
+            @media screen and (max-width: 800px){
+
+                .hero-container {
+                    grid-template-columns: 1fr;
+                }
+                
+                .heading h1{
+                    font-size: 45px;
+                    margin-top: 30px;
+                }
+                .hero{
+                    margin: 0px;
+                    
+                }
+                .container{
+                    width: 100%;
+                    flex-direction: column;
+                    margin: 0px;
+                    padding: 0px 40px;
+                }   
+                .hero-content{
+                    width: 100%;
+                    margin: 35px 0px;
+                }
+
+                .hero-content h2{
+                    font-size: 30px;
+                    text-align: center;
+                }
+
+                .hero-content h1{
+                    font-size: 55px;
+                    text-align: center;
+                }
+                .hero-content p{
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+
+                .two{
+                    margin: 0px;
+                    height: 100%;
+
+                }
+
+                .two-content{
+                    width: 100%;
+                    margin: 35px 0px;
+                }
+
+                .two-content h1{
+                    font-size: 40px;
+                    text-align: center;
+                }
+
+                .two-content h2{
+                    font-size: 25px;
+                    text-align: center;
+                }
+
+                .two-content p{
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+
+
+                .column {
+                    width: 50%;
+                }
+
+                .button{
+                    font-size: 16px;
+                    padding: 8px 17px;
+                }
+
+                .prev, .next,.text {
+                    font-size: 11px
+                }
+
+                .hero-content{
+                    width: 100%;
+                    margin: 35px 0px;
+                }
+
+            }
+
+
+            @keyframes fadeInRight {
+                0%{
+                    opacity: 0;
+                    transform: translateX(-50px);
+                }
+                100%{
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
+
+        </style>
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    </head>
+
+    <body>
+
+        <section class = "header">
+            <div class = "containerr"> 
+                <a href ="./index.html"> 
+                    <img src = "chimney-home-icon-transparent-1.png" width = "50" height = "70" class = "logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li> <a href = "./showroom.html"> Showroom</a></li>
+                        <li> <a href = "./about.html"> About </a></li>
+                        <li> <a href = "./projects.html"> Projects </a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class = "hero">
+            <div class = "hero-container">
+                <div class = "column-left">
+                    <h1> Bubble Cat </h1>
+
+                </div>
+                
+                <!-- <div class = "column-left">
+                    <img class = "hero-image" src = "Banana_Cat.png" >
+                </div> -->
+            </div>
+        </section>
+
+        <section class = "two ">
+            <div class = "hero-container">
+                <div class = "two-content">
+                    <h1> Info </h1>
+
+                    <div class="btn-group">
+                        <button style="height:100px;width:300px"> ? Why </button>
+                        <button style="height:100px;width:300px"> &#128197 When </button>
+                        <button style="height:100px;width:300px"> More </button>
+                    </div>                    
+                </div>
+                <div class = "hero-image">
+                    <img src="Banana_Cat.png" style = "width: 90%">
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="https://www.instagram.com/elainez.art/"><i class="icon ion-social-instagram"></i></a><a href="https://www.linkedin.com/in/elaine-zhuu"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/ratricez"><i class="icon ion-social-github"></i></a></div>
+                <ul class="list-inline">
+                </ul>
+                <p class="copyright">Elaine Zhu © 2023</p>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+     
+
+    </body>
+
+<!-- Ending tag -->
+</html>
