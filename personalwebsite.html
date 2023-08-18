@@ -333,6 +333,7 @@
                 .two{
                     margin: 0px;
                     height: 100%;
+                    padding: 10px 10px;
 
                 }
 
@@ -392,7 +393,6 @@
 
         </style>
 
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Untitled</title>
@@ -420,7 +420,7 @@
         <section class = "hero">
             <div class = "hero-container">
                 <div class = "column-left">
-                    <h1> Bubble Cat </h1>
+                    <h1> Personal Website </h1>
 
                 </div>
                 
@@ -434,22 +434,28 @@
             <div class = "hero-container">
                 <div class = "two-content">
                     <h1> Info </h1>
+                    
+                    <div class = "btn-group">
 
-                    <div class="btn-group">
-                        <button style="height:100px;width:300px"> ? Why </button>
-                        <button style="height:100px;width:300px"> &#128197 When </button>
-                        <button style="height:100px;width:300px"> More </button>
-                    </div>                    
+                        <button style="height:100px;width:300px" onclick = "changeImage('Soviet_Cat.jpeg')"> ? Why </button>
+                        <button style="height:100px;width:300px" onclick = "changeImage('Banana_Cat.png')"> &#128197 When </button>
+                        <button style="height:100px;width:300px" onclick = "changeImage('Flowers.jpeg')"> More </button>
+
+
+                        <script>
+                            function changeImage(fileName){
+                                let img = document.querySelector("#bannerImage");
+                                img.setAttribute("src", fileName);
+                            }
+                        </script>
+                    </div>
                 </div>
                 <div class = "hero-image">
-                    <img src="Banana_Cat.png" style = "width: 90%">
+                    <img id = "bannerImage" src = "Banana_Cat.png"  style = "width: 90%" /> <br/>
                 </div>
+                    
             </div>
         </section>
-
-
-
-
 
         
         <div class="footer-basic">
